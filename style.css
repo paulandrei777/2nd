@@ -1,0 +1,76 @@
+/*------------- INDEX -----------------*/
+
+/* Global font style for nav links */
+.nav-link {
+  font-family: 'Bangers', cursive;
+  font-size: 20px;
+  color: rgb(80, 35, 20);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  height: 42px; /* Matches Order Now height */
+  padding: 0 12px;
+}
+
+/* Navbar layout */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.3rem 4rem;
+  transition: all 0.3s ease;
+  margin: 0 auto;
+}
+
+/* Navbar links layout */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+/* 🔧 FIX: Make sure nav items are centered */
+.nav-links li {
+  display: flex;
+  align-items: center;
+  height: 42px;
+}
+
+/* Sticky header */
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  width: 100%;
+  background-color: #f5f5f5;
+  border-bottom: 0.5px solid #dcdcdc;
+  transition: all 0.3s ease;
+}
+
+/* Logo image */
+.logo {
+  max-width: 60px;
+  height: auto;
+}
+
+/* Order Now button */
+.order-now a {
+  font-family: 'Bangers', cursive;
+  font-size: 20px;
+  color: white;
+  padding: 8px 20px;
+  display: flex;
+  align-items: center;
+  height: 42px;
+  border-radius: 14px;
+  background-image: linear-gradient(90deg, rgb(214, 35, 0), rgb(214, 35, 0));
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.order-now a:hover {
+  background-color: rgb(180, 30, 0);
+}
