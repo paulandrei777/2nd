@@ -1,34 +1,247 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Burger King</title>
-    <link rel="icon" href="images/brand-logo.webp" type="image/x-icon" />
-    <link rel="stylesheet" href="style.css" />
- 
- 
-  </head>
 
-  <body>
-    
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Burger King</title>
+  <link rel="icon" href="images/brand-logo.webp" type="image/x-icon" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Bangers&family=Outfit:wght@100..900&display=swap">
 
-    <header class="header">
-      <nav class="navbar">
-        <a href="#"><img class="logo" src="images/brand-logo.webp" /></a>
-        <ul class="nav-links">
-          <li><a class="nav-link" href="#">Home</a></li>
-          <li><a class="nav-link" href="#">Menu</a></li>
-          <li><a class="nav-link" href="#">Bulk Order</a></li>
-          <li><a class="nav-link" href="#">Offers</a></li>
-          <li><a class="nav-link" href="#">Restaurants</a></li>
-          <li><a class="nav-link" href="#">Contact Us</a></li>
-          <li class="order-now"><a href="#">Order Now</a></li>
-        </ul>
-      </nav>
-    </header>
+</head>
 
- 
+<body>
 
-  </body>
+
+  <header class="header">
+    <nav class="navbar">
+      <a href="#"><img class="logo" src="images/brand-logo.webp" /></a>
+      <ul class="nav-links">
+        <li><a class="nav-link" href="#">Home</a></li>
+        <li><a class="nav-link" href="#">Menu</a></li>
+        <li><a class="nav-link" href="#">Bulk Order</a></li>
+        <li><a class="nav-link" href="#">Offers</a></li>
+        <li><a class="nav-link" href="#">Restaurants</a></li>
+        <li><a class="nav-link" href="#">Contact Us</a></li>
+        <li><a class="order-now" href="#">Order Now</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="first" class="section-p1">
+    <div class="div1">
+      <img src="images/whopper.webp" class="first-image" alt="">
+    </div>
+  </section>
+
+  <section id="second" class="section-p1">
+    <div class="div2">
+      <h1 class="sec2-h1">Welcome to Burger King. Home of the Whopper&#174;!</h1>
+      <p>Hungry Yet? Give in.</p>
+    </div>
+  </section>
+
+  <section id="third" class="section-p1">
+  <div class="container">
+    <div class="div3">
+      <h2>Featured</h2>
+      <a class="view-all" href="">View All</a>
+    </div>
+    <p class="pp"></p>
+    <!-- Grid Wrapper for 4 items -->
+    <div class="div4">
+      <div class="div5">
+        <article>
+          <figure>
+            <img class="third-img" src="images/Cheesy Dip.webp" alt="Cheesy Dip">
+            <h3>Cheesy Dip</h3>
+          </figure>
+        </article>
+        <a class="order-now" href="">Order Now</a>
+      </div>
+
+      <div class="div5">
+        <article>
+          <figure>
+            <img class="third-img" src="images/Angry Dip.webp" alt="Cheesy Dip">
+            <h3>Angry Dip</h3>
+          </figure>
+        </article>
+        <a class="order-now" href="">Order Now</a>
+      </div>
+
+      <div class="div5">
+        <article>
+          <figure>
+            <img class="third-img" src="images/Smoky BBQ Dip.webp" alt="Cheesy Dip">
+            <h3>Smoky BBQ Dip</h3>
+          </figure>
+        </article>
+        <a class="order-now" href="">Order Now</a>
+      </div>
+
+      <div class="div5">
+        <article>
+          <figure>
+            <img class="third-img" src="images/Breakfast Sausage Bowl.webp" alt="Cheesy Dip">
+            <h3>Breakfast Sausage Bowl</h3>
+          </figure>
+        </article>
+        <a class="order-now" href="">Order Now</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section-p1">
+    <div class="menu-header">
+      <h2>Menu</h2>
+      <a href="#">View All</a>
+    </div>
+
+    <div class="scroll-wrapper">
+      <div class="scroll-buttons">
+        <button onclick="scrollSlider('scroll-list-1',-1)">←</button>
+        <button onclick="scrollSlider('scroll-list-1',1)">→</button>
+      </div>
+
+      <div class="scroll-list" id="scroll-list-1">
+        <div class="card">
+          <img src="images/featured.webp" alt="Featured">
+          <h3>Featured</h3>
+        </div>
+        <div class="card">
+          <img src="images/group-meals.webp" alt="Group Meals">
+          <h3>Group Meals</h3>
+        </div>
+        <div class="card">
+          <img src="images/king-savers-bundles.webp" alt="King Savers Bundles">
+          <h3>King Savers Bundles</h3>
+        </div>
+        <div class="card">
+          <img src="images/whopper (1).webp" alt="Whopper">
+          <h3>Whopper</h3>
+        </div>
+        <div class="card">
+          <img src="images/four-cheese-whopper.webp" alt="Desserts">
+          <h3>4-Cheese Whopper</h3>
+        </div>
+        <div class="card">
+          <img src="images/xtra-long-chicken.webp" alt="Desserts">
+          <h3>X-tra Long Chicken</h3>
+        </div>
+        <div class="card">
+          <img src="images/breakfast.webp" alt="Desserts">
+          <h3>All-Day Breakfast</h3>
+        </div>
+        <div class="card">
+          <img src="images/plant-based-whopper.webp" alt="Desserts">
+          <h3>Plant-Based Whopper</h3>
+        </div>
+        <div class="card">
+          <img src="images/chicken-king.webp" alt="Desserts">
+          <h3>Chicken Wing</h3>
+        </div>
+        <div class="card">
+          <img src="images/flame-grilled-cheeseburger.webp" alt="Desserts">
+          <h3>Flame-Grilled Cheeseburger</h3>
+        </div>
+        <div class="card">
+          <img src="images/king-specials.webp" alt="Whopper">
+          <h3>King Specials</h3>
+        </div>
+        <div class="card">
+          <img src="images/tender-and-crispy-chicken.webp" alt="Whopper">
+          <h3>Tender and Crispy Chicken</h3>
+        </div>
+        <div class="card">
+          <img src="images/ultimate-sidekicks.webp" alt="Whopper">
+          <h3>Ultimate Sidekicks</h3>
+        </div>
+
+        <!-- Add more cards as needed -->
+      </div>
+    </div>
+  </section>
+
+  <section class="section-p1">
+    <div class="menu-header">
+      <h2>Offers</h2>
+      <a href="#">View All</a>
+    </div>
+
+    <div class="scroll-wrapper">
+      <div class="scroll-buttons">
+        <button onclick="scrollSlider('scroll-list-2',-1)">←</button>
+        <button onclick="scrollSlider('scroll-list-2',1)">→</button>
+      </div>
+
+      <div class="scroll-list" id="scroll-list-2">
+        <div class="card">
+          <img src="images/KC_Q12025_AO_1_2 Fries 1200x800.webp" alt="Featured">
+          <h3>Featured</h3>
+        </div>
+        <div class="card">
+          <img src="images/KC_Q12025_AO_2_6 Nuggets 1200x800.webp" alt="Group Meals">
+          <h3>Group Meals</h3>
+        </div>
+        <div class="card">
+          <img src="images/KC_Q12025_AO_3_2 Nutella 1200x800.webp" alt="King Savers Bundles">
+          <h3>King Savers Bundles</h3>
+        </div>
+        <div class="card">
+          <img src="images/KC_Q12025_AO_4_Med Iced Sweet Black 1200x800.webp" alt="Whopper">
+          <h3>Whopper</h3>
+        </div>
+        <div class="card">
+          <img src="images/KC_Q12025_1_2 XLC 1200x800.webp" alt="Desserts">
+          <h3>4-Cheese Whopper</h3>
+        </div>
+        <div class="card">
+          <img src="images/KC_Q12025_2_FG Double Cheeseburger 1200x800.webp" alt="Desserts">
+          <h3>X-tra Long Chicken</h3>
+        </div>
+        <div class="card">
+          <img src="images/KC_Q12025_3_PBW Jr Drink 1200x800.webp" alt="Desserts">
+          <h3>Plant-Based Whopper</h3>
+        </div>
+        <div class="card">
+          <img src="images/KC_Q12025_4_FGCB 3 Nuggets Drink 1200x800.webp" alt="Desserts">
+          <h3>Chicken Wing</h3>
+        </div>
+        <div class="card">
+          <img src="images/KC_Q12025_5_CK Fries Choc Sundae 1200x800.webp" alt="Desserts">
+          <h3>Flame-Grilled Cheeseburger</h3>
+        </div>
+        <!-- Add more cards as needed -->
+      </div>
+    </div>
+  </section>
+
+  <section class="section-p1">
+    <div>
+      <div class="div2-s6">
+        <h3 class="h3-s6">Order Now</h3>
+      </div>
+    </div>
+  </section>
+
+
+  <script>
+    function scrollSlider(id, direction) {
+      const container = document.getElementById(id);
+      const scrollAmount = 300;
+      container.scrollBy({
+        left: direction * scrollAmount,
+        behavior: 'smooth'
+      });
+    }
+  </script>
+
+
+
+</body>
+
 </html>
