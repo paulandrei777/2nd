@@ -6,21 +6,26 @@ body {
   color: rgb(80, 35, 20);
   background-color: #EFDECD;
 }
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-h1,h2,h3{
+h1,
+h2,
+h3 {
   font-size: 36px;
 }
-h3{
+
+h3 {
   margin-bottom: 0.5rem;
   flex: 1 1 0%;
   white-space: pre-line;
   text-align: center;
-  font-family: 'Bangers', cursive; /* replace with your heading font */
+  font-family: 'Bangers', cursive;
+  /* replace with your heading font */
   font-weight: 500;
   color: #592B18;
 }
@@ -83,7 +88,8 @@ p {
 
 /* Global style for buttons like 'Order Now' */
 .order-now {
-  font-family: 'Bangers', cursive; /* optional, if you want a consistent button font */
+  font-family: 'Bangers', cursive;
+  /* optional, if you want a consistent button font */
   font-size: 20px;
   color: white;
   padding: 8px 20px;
@@ -96,7 +102,8 @@ p {
   text-decoration: none;
   transition: background-color 0.3s ease;
   cursor: pointer;
-  border: none; /* in case it's applied to <button> later */
+  border: none;
+  /* in case it's applied to <button> later */
 }
 
 .order-now:hover {
@@ -123,29 +130,30 @@ p {
   border-radius: 10px;
 }
 
-.div2{
+.div2 {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.sec2-h1{
+
+.sec2-h1 {
   margin-bottom: 10px;
 }
 
-.view-all{
+.view-all {
   text-decoration: none;
   color: rgb(214, 35, 0);
   font-size: 16px;
   font-weight: 600;
 }
 
-.div3{
+.div3 {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.div4{
+.div4 {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 1rem;
@@ -155,137 +163,366 @@ p {
   scrollbar-width: none;
 }
 
-.third-img{
-    margin-left: auto;
+.third-img {
+  margin-left: auto;
   margin-right: auto;
   margin-bottom: 0.5rem;
-  width: 9rem; /* 144px */
+  width: 9rem;
+  /* 144px */
   object-fit: contain;
 }
 
-.div5{
+.div5 {
   display: flex;
   width: 100%;
   cursor: pointer;
   flex-direction: column;
   justify-content: space-between;
-  border-radius: 0.75rem;        /* rounded-xl */
-  border: 1px solid #e0e0e0;     /* border and border-chinese-white */
+  border-radius: 0.75rem;
+  /* rounded-xl */
+  border: 1px solid #e0e0e0;
+  /* border and border-chinese-white */
   background-color: white;
-  padding: 0.5rem; 
+  padding: 0.5rem;
 }
 
-figure{
+figure {
   display: flex;
   height: 100%;
   flex-direction: column;
 }
-.pp{
+
+.pp {
   margin-bottom: 1.5rem;
   color: #592B18;
 }
 
-.div-menu{
+.div-menu {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
 .menu-header {
-      max-width: 1200px;
-      margin: 0 auto 20px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
+  max-width: 1200px;
+  margin: 0 auto 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
-    .menu-header h2 {
-      font-size: 2rem;
-      color: #592B18;
-    }
+.menu-header h2 {
+  font-size: 2rem;
+  color: #592B18;
+}
 
-    .menu-header a {
-      color: #D62300;
-      text-decoration: none;
-      font-weight: bold;
-    }
+.menu-header a {
+  color: #D62300;
+  text-decoration: none;
+  font-weight: bold;
+}
 
-   .scroll-wrapper {
+.scroll-wrapper {
   max-width: 1200px;
   margin: 0 auto;
   position: relative;
 }
 
-    .scroll-buttons {
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      z-index: 1;
-      display: flex;
-      justify-content: space-between;
-      width: 100%;
-      pointer-events: none;
-    }
+.scroll-buttons {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  pointer-events: none;
+}
 
-    .scroll-buttons button {
-      pointer-events: auto;
-      background: white;
-      border: none;
-      padding: 10px;
-      border-radius: 50%;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-      cursor: pointer;
-    }
+.scroll-buttons button {
+  pointer-events: auto;
+  background: white;
+  border: none;
+  padding: 10px;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
 
-    .scroll-list {
-      display: flex;
-      gap: 1rem;
-      overflow-x: auto;
-      scroll-behavior: smooth;
-      padding-bottom: 10px;
-    }
+.scroll-list {
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding-bottom: 10px;
+}
 
-    .scroll-list::-webkit-scrollbar {
-      display: none;
-    }
+.scroll-list::-webkit-scrollbar {
+  display: none;
+}
 
-    .card {
-      min-width: 250px;
-      background: white;
-      border-radius: 10px;
-      overflow: hidden;
-      flex-shrink: 0;
-      display: flex;
-      flex-direction: column;
-      box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-    }
+.card {
+  min-width: 250px;
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
 
-    .card img {
-      width: 100%;
-      height: 160px;
-      object-fit: cover;
-    }
+.card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
 
-    .card h3 {
-      margin: 0;
-      padding: 15px;
-      background: #D62300;
-      color: #fff;
-      text-align: center;
-      font-size: 1rem;
-    }
+.card h3 {
+  margin: 0;
+  padding: 15px;
+  background: #D62300;
+  color: #fff;
+  text-align: center;
+  font-size: 1rem;
+}
 
-    .h3-s6{
-      display: flex;
-    }
+.h3-s6 {
+  display: flex;
+  margin-bottom: 1rem;
+  font-family: 'Bangers', sans-serif;
+  /* Replace with your font */
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 600;
+  color: #59260B;
 
-    .div2-s6{
-      
-    }
+}
+
+
+.haha2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.haha3 {
+  display: flex;
+  flex-direction: row; /* Align children (icon-text + button) in a row */
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 48%;
+  border-radius: 14px;
+  background-color: #F58025; /* Princeton Orange */
+  padding: 1.5rem;
+  color: #59260B;
+  text-align: left;
+  gap: 1rem;
+}
+
+.haha4 {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: 'Bangers', sans-serif; /* Or your font-heading */
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+.haha5 {
+  white-space: nowrap;
+}
+.haha6{
+  display: grid;
+  gap: 0.5rem; /* 8px */
+}
+
+.img3{
+  width: 150px;
+  height: 40px;
+}
+.lala{
+   margin-left: 1rem;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  padding-top: 1.5rem;
+}
+.lala2{
+  margin-left: 0;
+  margin-right: 0;
+  max-width: 100%;
+  padding-bottom: 1.5rem;
+}
+
+.lala3{
+  position: relative;
+  height: 100%;
+}
+.lala4{
+  display: flex;
+  scroll-snap-type: x mandatory;
+  align-items: stretch;
+  column-gap: 1rem;
+  overflow-x: scroll;
+  -ms-overflow-style: none;      /* IE/Edge */
+  scrollbar-width: none;       
+}
+.lala5 {
+  display: flex;
+  flex-direction: column;      /* Stack image and text vertically */
+  scroll-snap-align: start;
+  background-color: white;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  flex-shrink: 0;              /* Prevent shrinking in horizontal scroll */
+  width: 384px;                /* Optional: fixed width like the image */
+}
+
+.lala6 {
+  width: 100%;
+  height: 255px;
+  object-fit: contain;
+  display: block;
+  margin: 0;                   /* Remove unwanted gaps */
+  padding: 0;
+}
+
+.lala7 {
+  padding: 0;                  /* Remove padding if you want no space */
+  margin: 0;
+  background-color: white;
+  text-align: left;
+  font-size: 1rem;
+  font-weight: 500;
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+}
+.back-to-top {
+  text-decoration: none;        /* Remove underline */
+  font-size: 1.25rem;           /* Make text and icon bigger (20px) */
+  display: inline-flex;         /* Align icon and text */
+  align-items: center;
+  gap: 0.5rem;                  /* Space between icon and text */
+  margin-left: 1rem;            /* Space from left */
+  padding: 0.5rem 1rem;         /* Optional inner spacing */
+  color: #333;                  /* Optional: dark text */
+}
+
+.footer {
+  background-color: #4a1f07;
+  color: #fff;
+  font-family: 'Outfit', sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 2rem 1rem;
+  max-width: 1280px;
+  margin: 0 auto;
+  gap: 2rem;
+}
+
+.footer-left {
+  flex: 1;
+  min-width: 200px;
+}
+
+.footer-logo {
+  width: 100px;
+  margin-bottom: 0.5rem;
+}
+
+.footer-left h3 {
+  font-size: 1.5rem;
+  color: #fff5b2;
+  margin-bottom: 0.75rem;
+}
+
+.social-icons {
+  display: flex;
+  gap: 1rem;
+  font-size: 1.25rem;
+}
+
+.social-icons a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-links {
+  display: flex;
+  flex: 2;
+  gap: 2rem;
+  flex-wrap: wrap;
+  min-width: 250px;
+}
+
+.footer-links h4 {
+  font-size: 1rem;
+  color: #f5c17d;
+  margin-bottom: 0.5rem;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  margin-bottom: 0.4rem;
+}
+
+.footer-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+.footer-order {
+  flex: 1;
+  min-width: 200px;
+}
+
+.footer-order h4 {
+  font-size: 1rem;
+  color: #f5c17d;
+  margin-bottom: 0.5rem;
+}
+
+.order-btn {
+  display: inline-block;
+  background-color: #e5390f;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  text-decoration: none;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.store-buttons img {
+  width: 120px;
+  margin-right: 0.5rem;
+}
+
+.footer-bottom {
+  text-align: center;
+  font-size: 0.875rem;
+  padding: 1rem;
+  background-color: #3c1a05;
+  color: #ccc;
+}
 
 
 
-    /* ----------------- RESPONSIVE STYLES ----------------- */
+
+
+
+/* ----------------- RESPONSIVE STYLES ----------------- */
 
 /* Medium devices (tablets, 768px and up) */
 @media (max-width: 992px) {
@@ -303,7 +540,8 @@ figure{
   }
 
   .scroll-buttons {
-    display: none; /* Hide arrows if space is tight */
+    display: none;
+    /* Hide arrows if space is tight */
   }
 
   .card {
@@ -317,7 +555,8 @@ figure{
     padding: 30px 20px;
   }
 
-  h1, h2 {
+  h1,
+  h2 {
     font-size: 28px;
     text-align: center;
   }
@@ -366,4 +605,3 @@ figure{
     width: 100%;
   }
 }
-
