@@ -1,96 +1,464 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Burger King</title>
+    <link rel="icon" href="images/brand-logo.webp" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Bangers&family=Outfit:wght@100..900&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navbar">
+        <a href="#"><img class="logo" src="images/brand-logo.webp" /></a>
+        <ul class="nav-links">
+          <li><a class="nav-link" href="index.html">Home</a></li>
+          <li class="menu-dropdown">
+            <a class="nav-link" href="#">Menu</a>
+            <div class="dropdown-content">
+              <div class="dropdown-grid">
+                <a href="#"><img src="images/whopper.png" alt="" />Whopper</a>
+                <a href="#"
+                  ><img src="images/4cheese.png" alt="" />4-Cheese Whopper</a
+                >
+                <a href="#"
+                  ><img src="images/xtra-long-chicken.png" alt="" />X-tra Long
+                  Chicken</a
+                >
+                <a href="#"
+                  ><img src="images/cheeseburger.png" alt="" />Flame-Grilled
+                  Cheeseburger</a
+                >
+                <a href="#"
+                  ><img src="images/plantbased.png" alt="" />Plant-Based
+                  Whopper</a
+                >
+                <a href="#"><img src="images/bkcafe.png" alt="" />BK Café</a>
+                <a href="#"><img src="images/drinks.png" alt="" />Drinks</a>
+                <a href="#"><img src="images/desserts.png" alt="" />Desserts</a>
+              </div>
+            </div>
+          </li>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Burger King</title>
-  <link rel="icon" href="images/brand-logo.webp" type="image/x-icon" />
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Bangers&family=Outfit:wght@100..900&display=swap">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
-
-</head>
-<body>
-
-  <header class="header">
-    <nav class="navbar">
-      <a href="#"><img class="logo" src="images/brand-logo.webp" /></a>
-      <ul class="nav-links">
-        <li><a class="nav-link" href="index.html">Home</a></li>
-        <li><a class="nav-link" href="menu.html">Menu</a></li>
-        <li><a class="nav-link" href="#">Bulk Order</a></li>
-        <li><a class="nav-link" href="#">Offers</a></li>
-        <li><a class="nav-link" href="#">Restaurants</a></li>
-        <li><a class="nav-link" href="#">Contact Us</a></li>
-        <li><a class="order-now" href="#">Order Now</a></li>
-      </ul>
-    </nav>
-  </header>
-
-
-
-
-  <footer class="footer">
-  <div class="footer-container">
-    
-    <!-- Left: Logo and Socials -->
-    <div class="footer-left">
-      <img src="images/brand-logo.webp" alt="Burger King Logo" class="footer-logo" />
-      <h3>Follow Us!</h3>
-      <div class="social-icons">
-        <a href="#"><i class="fa fa-facebook"></i></a>
-        <a href="#"><i class="fa fa-instagram"></i></a>
-        <a href="#"><i class="fa fa-youtube-play"></i></a>
-        <a href="#"><i class="fa fa-x-twitter"></i></a>
-        <a href="#"><i class="fa fa-tiktok"></i></a>
-      </div>
-    </div>
-
-    <!-- Middle: Quick Links -->
-    <div class="footer-links">
-      <div>
-        <h4>QUICKLINKS</h4>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Menu</a></li>
-          <li><a href="#">Bulk Order</a></li>
-          <li><a href="#">Offers</a></li>
+          <li><a class="nav-link" href="#">Bulk Order</a></li>
+          <li><a class="nav-link" href="#">Offers</a></li>
+          <li><a class="nav-link" href="#">Restaurants</a></li>
+          <li><a class="nav-link" href="#">Contact Us</a></li>
+          <li><a class="order-now" href="#">Order Now</a></li>
         </ul>
-      </div>
-      <div>
-        <ul>
-          <li><a href="#">Restaurants</a></li>
-          <li><a href="#">Careers</a></li>
-          <li><a href="#">Allergen Information</a></li>
-          <li><a href="#">Privacy Notice</a></li>
-        </ul>
-      </div>
-      <div>
-        <ul>
-          <li><a href="#">Corporate Information</a></li>
-        </ul>
-      </div>
-    </div>
+      </nav>
+    </header>
 
-    <!-- Right: Order Now and App -->
-    <div class="footer-order">
-      <h4>ORDER ONLINE</h4>
-      <a href="#" class="order-btn">Order Now</a>
-      <h4>DOWNLOAD BURGER KING APP</h4>
-      <div class="store-buttons">
-        <a href="#"><img src="images/play-store.webp" alt="Google Play"></a>
-        <a href="#"><img src="images/app-store.webp" alt="App Store"></a>
+    <section class="featured-section">
+      <div class="container">
+        <h1 class="featured-heading">Featured</h1>
+
+        <div class="featured-grid">
+          <div class="featured-card">
+            <img src="images/Cheesy Dip.webp" alt="Cheesy Dip" />
+            <h3>Cheesy Dip</h3>
+            <a href="#" class="btn-order">Order Now</a>
+          </div>
+          <div class="featured-card">
+            <img src="images/Angry Dip.webp" alt="Cheesy Dip" />
+            <h3>Angry Dip</h3>
+            <a href="#" class="btn-order">Order Now</a>
+          </div>
+          <div class="featured-card">
+            <img src="images/Smoky BBQ Dip.webp" alt="Cheesy Dip" />
+            <h3>Smoky BBQ Dip</h3>
+            <a href="#" class="btn-order">Order Now</a>
+          </div>
+          <div class="featured-card">
+            <img src="images/Breakfast Sausage Bowl.webp" alt="Cheesy Dip" />
+            <h3>Breakfast Sausage Bowl</h3>
+            <a href="#" class="btn-order">Order Now</a>
+          </div>
+          <div class="featured-card">
+            <img src="images/Iced Salted Caramel Affogato.webp" alt="Cheesy Dip" />
+            <h3>Ice Salted Caramel Affogato Style</h3>
+            <a href="#" class="btn-order">Order Now</a>
+          </div>
+          <div class="featured-card">
+            <img src="images/Iced Salted Caramel.webp" alt="Cheesy Dip" />
+            <h3>Ice Salted Caramel</h3>
+            <a href="#" class="btn-order">Order Now</a>
+          </div>
+          <div class="featured-card">
+            <img src="images/King Fusion with Nutella.webp" alt="Cheesy Dip" />
+            <h3>King Fusion With Nutella</h3>
+            <a href="#" class="btn-order">Order Now</a>
+          </div>
+          <div class="featured-card">
+            <img src="images/BK Sundae with Nutella.webp" alt="Cheesy Dip" />
+            <h3>BK Sundae With Nutella</h3>
+            <a href="#" class="btn-order">Order Now</a>
+          </div>
+          <!-- Repeat other cards as needed -->
+        </div>
       </div>
-    </div>
+    </section>
 
-  </div>
+    <section class="featured-section">
+      <div class="container">
+        <h1 class="featured-heading">Group Meals</h1>
 
-  <div class="footer-bottom">
-    <p>TM & Copyright 2025 Burger King Corporation. All Rights Reserved.</p>
-  </div>
-</footer>
-</body>
+        <div class="featured-grid">
+          <div class="featured-card">
+            <img src="images/KF2 MnM G&FP.webp" alt="Cheesy Dip" />
+            <h3>King Feast:Mix'nFeast for 2</h3>
+            <a href="#" class="btn-order">Order Now</a>
+          </div>
+          <div class="featured-card">
+            <img src="images/KF MnM G&FP for 3.webp" alt="Cheesy Dip" />
+            <h3>King Feast:Mix'nFeast for 3</h3>
+            <a href="#" class="btn-order">Order Now</a>
+          </div>
+          <div class="featured-card">
+            <img src="images/KF MnM G&FP for 4.webp" alt="Cheesy Dip" />
+            <h3>King Feast:Mix'nFeast for 4</h3>
+            <a href="#" class="btn-order">Order Now</a>
+          </div>
+          <!-- Repeat other cards as needed -->
+        </div>
+      </div>
+    </section>
+
+    <section class="featured-section">
+      <div class="container">
+        <h1 class="featured-heading">King Savers Bundles</h1>
+
+        <div class="featured-grid">
+          <div class="featured-card">
+            <img src="images/199 King Savers Bundle.webp" alt="Cheesy Dip" />
+            <h3>199 King Savers Bundles</h3>
+            <a href="#" class="btn-order">Order Now</a>
+          </div>
+          <div class="featured-card">
+            <img src="images/299 King Savers Bundle.webp" alt="Cheesy Dip" />
+            <h3>299 King Savers Bundles</h3>
+            <a href="#" class="btn-order">Order Now</a>
+          </div>
+          <!-- Repeat other cards as needed -->
+        </div>
+      </div>
+    </section>
+
+    <section class="featured-section">
+      <div class="container">
+        <h1 class="featured-heading">Whopper</h1>
+
+        <div class="featured-grid">
+          <div class="featured-card">
+            <img src="images/Whopper_Jr._P75.webp" alt="Cheesy Dip" />
+            <h3>Whopper Jr.</h3>
+            <a href="#" class="btn-order">Order Now</a>
+          </div>
+          <div class="featured-card">
+            <img src="images/Whopper_P177.webp" alt="Cheesy Dip" />
+            <h3>Whopper</h3>
+            <a href="#" class="btn-order">Order Now</a>
+          </div>
+          <!-- Repeat other cards as needed -->
+        </div>
+      </div>
+    </section>
+
+    <section class="featured-section">
+      <div class="container">
+        <h1 class="featured-heading">4 Cheese Whopper</h1>
+
+        <div class="featured-grid">
+          <div class="featured-card">
+            <img src="images/4-Cheese_Whopper_Jr._P99.webp" alt="Cheesy Dip" />
+            <h3>4-Cheese Whopper Jr.</h3>
+            <a href="#" class="btn-order">Order Now</a>
+          </div>
+          <div class="featured-card">
+            <img src="images/4-Cheese_Whopper_P198.webp" alt="Cheesy Dip" />
+            <h3>4-Cheese Whopper</h3>
+            <a href="#" class="btn-order">Order Now</a>
+          </div>
+          <div class="featured-card">
+            <img src="images/Bacon_4-Cheese_Whopper_Jr._P173.webp" alt="Cheesy Dip" />
+            <h3>Bacon 4-Cheese Whopper Jr.</h3>
+            <a href="#" class="btn-order">Order Now</a>
+          </div>
+          <div class="featured-card">
+            <img src="images/Bacon_4-Cheese_Whopper_P282.webp" alt="Cheesy Dip" />
+            <h3>Bacon 4-Cheese Whopper</h3>
+            <a href="#" class="btn-order">Order Now</a>
+          </div>
+          <!-- Repeat other cards as needed -->
+        </div>
+      </div>
+    </section>
+
+    <section class="featured-section">
+      <div class="container">
+        <h1 class="featured-heading">X-tra Long Chicken</h1>
+
+        <div class="featured-grid">
+          <div class="featured-card">
+            <img src="images/X-tra_Long_Chicken_Jr._P59.webp" alt="Cheesy Dip" />
+            <h3>X-tra Long Chicken Jr. Sandwich</h3>
+            <a href="#" class="btn-order">Order Now</a>
+          </div>
+          <div class="featured-card">
+            <img src="images/X-tra_Long_Chicken_P99.webp" alt="Cheesy Dip" />
+            <h3>X-tra Long Chicken Sandwich</h3>
+            <a href="#" class="btn-order">Order Now</a>
+          </div>
+          <!-- Repeat other cards as needed -->
+        </div>
+      </div>
+    </section>
+
+    <section class="featured-section">
+      <div class="container">
+        <h1 class="featured-heading">All-Day Breakfast</h1>
+
+        <div class="featured-grid">
+          <div class="featured-card">
+            <img src="images/Breakfast Sausage Bowl.webp" alt="Cheesy Dip" />
+            <h3>Breakfast Sausage Bowl</h3>
+            <a href="#" class="btn-order">Order Now</a>
+          </div>
+          <div class="featured-card">
+            <img src="images/2-pc Waffle.webp" alt="Cheesy Dip" />
+            <h3>2-pc. BK Waffle with Maple</h3>
+            <a href="#" class="btn-order">Order Now</a>
+          </div>
+          <div class="featured-card">
+            <img src="images/2-pc Waffle with Sausage.webp" alt="Cheesy Dip" />
+            <h3>2-pc. BK Waffle with Maple and Sausage</h3>
+            <a href="#" class="btn-order">Order Now</a>
+          </div>
+          <div class="featured-card">
+            <img src="images/Waffle w Cheese.webp" alt="Cheesy Dip" />
+            <h3>BK Waffle Sausage King with Cheese</h3>
+            <a href="#" class="btn-order">Order Now</a>
+          </div>
+          <div class="featured-card">
+            <img src="images/Waffle w Egg.webp" alt="Cheesy Dip" />
+            <h3>BK Waffle Sausage King with Egg</h3>
+            <a href="#" class="btn-order">Order Now</a>
+          </div>
+          <div class="featured-card">
+            <img src="images/Waffles with Nutella ALC.webp" alt="Cheesy Dip" />
+            <h3>2-pc. Waffles with Nutella Solo</h3>
+            <a href="#" class="btn-order">Order Now</a>
+          </div>
+          <div class="featured-card">
+            <img src="images/Waffles with Nutella Combo.webp" alt="Cheesy Dip" />
+            <h3>2-pc. Waffles with Nutella Combo</h3>
+            <a href="#" class="btn-order">Order Now</a>
+          </div>
+          <div class="featured-card">
+            <img src="images/2pc. Waffles & Chicken Solo.webp" alt="Cheesy Dip" />
+            <h3>2-pc. Waffles and Chicken</h3>
+            <a href="#" class="btn-order">Order Now</a>
+          </div>
+          <div class="featured-card">
+            <img src="images/Mushroom,_Egg,_&_Cheese_Sandwich_P99.webp" alt="Cheesy Dip" />
+            <h3>Mushroom, Egg, & Chhese Sandwich</h3>
+            <a href="#" class="btn-order">Order Now</a>
+          </div>
+          <div class="featured-card">
+            <img src="images/Bacon_Platter_P115.webp" alt="Cheesy Dip" />
+            <h3>Bacon Platter</h3>
+            <a href="#" class="btn-order">Order Now</a>
+          </div>
+          <!-- Repeat other cards as needed -->
+        </div>
+      </div>
+    </section>
+
+    <section class="featured-section">
+      <div class="container">
+        <h1 class="featured-heading">Plant Based Whopper</h1>
+
+        <div class="featured-grid">
+          <div class="featured-card">
+            <img src="images/Plant-Based Whopper Jr.webp" alt="Cheesy Dip" />
+            <h3>Plant-Based Whopper Jr.</h3>
+            <a href="#" class="btn-order">Order Now</a>
+          </div>
+          <div class="featured-card">
+            <img src="images/Plant-Based Whopper.webp" alt="Cheesy Dip" />
+            <h3>Plant-Based Whopper</h3>
+            <a href="#" class="btn-order">Order Now</a>
+          </div>
+          <!-- Repeat other cards as needed -->
+        </div>
+      </div>
+    </section>
+
+    <section class="featured-section">
+      <div class="container">
+        <h1 class="featured-heading">Chicken King</h1>
+
+        <div class="featured-grid">
+          <div class="featured-card">
+            <img src="images/BLT Spicy Chicken King ALC G&FP.webp" alt="Cheesy Dip" />
+            <h3>BLT Spicy Chicken King</h3>
+            <a href="#" class="btn-order">Order Now</a>
+          </div>
+          <div class="featured-card">
+            <img src="images/Chicken_King_P155.webp" alt="Cheesy Dip" />
+            <h3>Chicken King</h3>
+            <a href="#" class="btn-order">Order Now</a>
+          </div>
+          <div class="featured-card">
+            <img src="images/Spicy_Chicken_King__P179.webp" alt="Cheesy Dip" />
+            <h3>Spicy Chicken King</h3>
+            <a href="#" class="btn-order">Order Now</a>
+          </div>
+          <!-- Repeat other cards as needed -->
+        </div>
+      </div>
+    </section>
+
+    <section class="featured-section">
+      <div class="container">
+        <h1 class="featured-heading">Flame-Grilled Cheeseburger</h1>
+
+        <div class="featured-grid">
+          <div class="featured-card">
+            <img src="images/BBQ_Bacon_King_Jr._P156.webp" alt="Cheesy Dip" />
+            <h3>Flame-Grilled BBQ Hamburger</h3>
+            <a href="#" class="btn-order">Order Now</a>
+          </div>
+          <div class="featured-card">
+            <img src="images/Flame-Grilled_Hamburger_P69.webp" alt="Cheesy Dip" />
+            <h3>Flame-Grilled Hamburger</h3>
+            <a href="#" class="btn-order">Order Now</a>
+          </div>
+          <div class="featured-card">
+            <img src="images/Flame-Grilled_Cheeseburger_P69.webp" alt="Cheesy Dip" />
+            <h3>Flame-Grilled Cheeseburger</h3>
+            <a href="#" class="btn-order">Order Now</a>
+          </div>
+          <div class="featured-card">
+            <img src="images/Flame-Grilled_Double_Cheeseburger_P156.webp" alt="Cheesy Dip" />
+            <h3>Flame-Grilled Double Cheeseburgerp</h3>
+            <a href="#" class="btn-order">Order Now</a>
+          </div>
+          <div class="featured-card">
+            <img src="images/Flame-Grilled_BBQ_Bacon_Cheeseburger_P142.webp" alt="Cheesy Dip" />
+            <h3>Flame-Grilled BBQ Bacon Cheeseburger</h3>
+            <a href="#" class="btn-order">Order Now</a>
+          </div>
+          <div class="featured-card">
+            <img src="images/Quarter_Pound_King_P184.webp" alt="Cheesy Dip" />
+            <h3>Quarter Pound King</h3>
+            <a href="#" class="btn-order">Order Now</a>
+          </div>
+          <!-- Repeat other cards as needed -->
+        </div>
+      </div>
+    </section>
+
+    <section class="featured-section">
+      <div class="container">
+        <h1 class="featured-heading">Drinks</h1>
+
+        <div class="featured-grid">
+          <div class="featured-card">
+            <img src="images/Rootbeer_Float_P39.webp" alt="Cheesy Dip" />
+            <h3>Rootbeer Float</h3>
+            <a href="#" class="btn-order">Order Now</a>
+          </div>
+          <div class="featured-card">
+            <img src="images/Coke_Original_Taste_P49.webp" alt="Cheesy Dip" />
+            <h3>Coke Original Taste</h3>
+            <a href="#" class="btn-order">Order Now</a>
+          </div>
+          <div class="featured-card">
+            <img src="images/Iced_Tea_P49.webp" alt="Cheesy Dip" />
+            <h3>Iced Tea</h3>
+            <a href="#" class="btn-order">Order Now</a>
+          </div>
+          <div class="featured-card">
+            <img src="images/Coke_Float_P39.webp" alt="Cheesy Dip" />
+            <h3>Float</h3>
+            <a href="#" class="btn-order">Order Now</a>
+          </div>
+          <!-- Repeat other cards as needed -->
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <!-- Left: Logo and Socials -->
+        <div class="footer-left">
+          <img
+            src="images/brand-logo.webp"
+            alt="Burger King Logo"
+            class="footer-logo"
+          />
+          <h3>Follow Us!</h3>
+          <div class="social-icons">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+            <a href="#"><i class="fa fa-youtube-play"></i></a>
+            <a href="#"><i class="fa fa-x-twitter"></i></a>
+            <a href="#"><i class="fa fa-tiktok"></i></a>
+          </div>
+        </div>
+
+        <!-- Middle: Quick Links -->
+        <div class="footer-links">
+          <div>
+            <h4>QUICKLINKS</h4>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Menu</a></li>
+              <li><a href="#">Bulk Order</a></li>
+              <li><a href="#">Offers</a></li>
+            </ul>
+          </div>
+          <div>
+            <ul>
+              <li><a href="#">Restaurants</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Allergen Information</a></li>
+              <li><a href="#">Privacy Notice</a></li>
+            </ul>
+          </div>
+          <div>
+            <ul>
+              <li><a href="#">Corporate Information</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Right: Order Now and App -->
+        <div class="footer-order">
+          <h4>ORDER ONLINE</h4>
+          <a href="#" class="order-btn">Order Now</a>
+          <h4>DOWNLOAD BURGER KING APP</h4>
+          <div class="store-buttons">
+            <a href="#"
+              ><img src="images/play-store.webp" alt="Google Play"
+            /></a>
+            <a href="#"><img src="images/app-store.webp" alt="App Store" /></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>TM & Copyright 2025 Burger King Corporation. All Rights Reserved.</p>
+      </div>
+    </footer>
+  </body>
 </html>
